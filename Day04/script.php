@@ -24,7 +24,7 @@ foreach ($lines as $row => $line) {
     } else {
         $cardPoints = 2**($foundMatches-1);
     }
-    
+
     $points += $cardPoints;
 }
 

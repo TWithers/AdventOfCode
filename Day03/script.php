@@ -15,6 +15,14 @@ $total = 0;
 
 $numbers = [];
 
+/**
+ * There are going to be more elegant solutions out there.
+ * Essentially we wrap the entire map with a border of "." so that when we are working through the map, we don't have to
+ * worry about being on the border.
+ *
+ * There is a lot of copy and paste here that could be extracted into a function, specifically getting the full integer backwards
+ * and forwards from a given location on the map.
+ */
 foreach ($lines as $row => $line) {
     $characters = str_split($line);
     foreach ($characters as $col => $character) {
@@ -129,6 +137,12 @@ foreach ($lines as $row => $line) {
 }
 
 echo 'Part 1 Total: '.array_sum($numbers)."\n";
+
+
+/**
+ * Part 2 was easy with the logic built out in part one, we can quickly see if only 2 gears are touching and then
+ * calculate the values.
+ */
 
 $numbers = [];
 

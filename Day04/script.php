@@ -30,6 +30,11 @@ foreach ($lines as $row => $line) {
 
 echo 'Part 1 Total: '.$points."\n";
 
+/**
+ * Part 2 can be done a similar way to part 1. We just need to keep track of the card we are on and how many winners there
+ * have been previously for the cards.
+ */
+
 $cardCounts = [];
 foreach ($lines as $row => $line) {
     preg_match_all('/Card([\d ]+): ([\d ]+) | ([\d ]+)/', $line, $matches);

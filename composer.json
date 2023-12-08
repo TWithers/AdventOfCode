@@ -1,0 +1,14 @@
+{
+    "name": "twithers/advent-of-code",
+    "type": "project",
+    "require": {
+        "guzzlehttp/guzzle": "^7.8",
+        "guzzlehttp/psr7": "^2.6"
+    },
+    "authors": [
+        {
+            "name": "TWithers",
+            "email": "timothy.withers@gmail.com"
+        }
+    ]
+}
